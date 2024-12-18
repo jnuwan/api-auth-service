@@ -1,3 +1,6 @@
+Based on the details retrieved, here's a README file for the `api-auth-service` repository:
+
+```markdown
 # API Auth Service
 
 API authentication service demo Spring Boot application.
@@ -46,49 +49,60 @@ The `api-auth-service` is a demo application that provides authentication and au
    ```bash
    git clone https://github.com/jnuwan/api-auth-service.git
    cd api-auth-service
-   
-   Build the project using Maven:
+   ```
 
-mvn clean install
+2. Build the project using Maven:
+   ```bash
+   mvn clean install
+   ```
 
-    Configure your database settings and application properties in application.properties.
+3. Configure your database settings and application properties in `application.properties`.
 
-Running the Application
+### Running the Application
 
 To run the application locally, use the following command:
-
+```bash
 mvn spring-boot:run
+```
 
-This will start the authentication service, and you can access it at http://localhost:8080.
-Usage
-Endpoints
+This will start the authentication service, and you can access it at `http://localhost:8080`.
 
-    POST /api/auth/register: Register a new user.
-    POST /api/auth/login: Authenticate a user and generate a JWT token.
-    GET /api/auth/user: Get authenticated user details (requires valid JWT token).
+## Usage
 
-Example Request
+### Endpoints
 
+- `POST /api/auth/register`: Register a new user.
+- `POST /api/auth/login`: Authenticate a user and generate a JWT token.
+- `GET /api/auth/user`: Get authenticated user details (requires valid JWT token).
+
+### Example Request
+
+```bash
 curl -X POST http://localhost:8080/api/auth/login -H "Content-Type: application/json" -d '{"username":"testuser", "password":"testpassword"}'
+```
 
-Contributing
+## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request.
-Steps to Contribute
 
-    Fork the repository.
-    Create a new branch (git checkout -b feature-branch).
-    Make your changes.
-    Commit your changes (git commit -m 'Add some feature').
-    Push to the branch (git push origin feature-branch).
-    Open a pull request.
+### Steps to Contribute
 
-License
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature-branch`).
+6. Open a pull request.
+
+## License
 
 This project is not currently licensed under any specific license.
-Contact
 
-    GitHub: jnuwan
-    Email: [Your Email Here]
+## Contact
+
+- GitHub: [jnuwan](https://github.com/jnuwan)
+- Email: [jnuwan2011@gmail.com]
+
+```
 
 Feel free to customize the sections such as `Technologies` and `Contact` with specific details relevant to your project and personal information.
